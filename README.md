@@ -42,7 +42,7 @@ fCNV can print a line of text like "This file have 26 variables". I believe that
 
 
 Happy concatenating!
--Zach
+-Talia
 
 
 I got this readme template from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md

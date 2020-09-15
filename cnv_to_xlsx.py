@@ -3,7 +3,7 @@
 Created on Fri Jan  3 13:31:35 2020
 Last updated Jan 5 2020
 
-@author: zheva
+@author: Talia Evans
 
 This script is designed to concatenate all of the Seabird cnv files in a single folder into an Excel sheet, which this script writes.
 It uses a pre-existing python library called "Seabird" for parsing the cnv files. You must download this library before this code works.
