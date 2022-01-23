@@ -91,36 +91,41 @@ fullout=pd.DataFrame(fullout, columns=header)
 
 fullout=fullout.drop(header[1],axis=1) # remove the bottle column because it's useless
 
-cols = fullout.columns.tolist() # get the column headers
-myorder = [0,1,2,3,4,5,6,9,16,7,8,10,11,12,13,14,15,17,18,19] # order of column headers I desire
-cols2 = [cols[i] for i in myorder] # rearange header
-fullout = fullout[cols2] # rearrange dataframe
+# if you want to adjust the order of the columns in the output spreadsheet, you can do that here
+
+#cols = fullout.columns.tolist() # get the column headers
+#myorder = [0,1,2,3,4,5,6,9,16,7,8,10,11,12,13,14,15,17,18,19] # order of column headers I desire
+#cols2 = [cols[i] for i in myorder] # rearange header
+#fullout = fullout[cols2] # rearrange dataframe
+
 fullout.to_excel(output_name1,index=False) #outputs the concatenated data. Change the file name by adjusting "ouput_name" at the top. Index referes to unique numbers on the left side of the xlsx sheet, these aren't really needed.  
 
-#%% 6. Average and write short dataset
+##%% 6. Average and write short dataset
 
-myorder=[17,18,11,12,9,10,14,15,16,0,7]
-cols3 = [cols2[i] for i in myorder] # rearange header
-tempframe=fullout[cols3]
-#tempframe.convert_objects(convert_numeric=True)
-#shortout=pd.to_numeric(tempframe[cols3])
+# If you want to average sensors together, like T1 and T2, that can be done in this chunk. The column order needs to be correct
 
-shortout=pd.DataFrame()
-for i in cols3:
-    shortout[i]=pd.to_numeric(tempframe[i])
-
-shortout['temp'] = shortout[cols3[0:2]].mean(axis=1)
-shortout['sal'] = shortout[cols3[2:4]].mean(axis=1)
-shortout['oxy'] = shortout[cols3[4:6]].mean(axis=1)
-shortout['pdens'] = shortout[cols3[7:9]].mean(axis=1)
-shortout=shortout.drop(cols3[0:6]+cols3[7:9],axis=1) # remove the columns that were averaged
-
-cols4 = shortout.columns.tolist() # get the column headers
-myorder=[1,2,3,4,5,0,6]
-cols4 = [cols4[i] for i in myorder] # rearange header
-shortout=shortout[cols4] # format output into easily pastable structure
-shortout.to_excel(output_name2,index=False) #outputs the concatenated data. Change the file name by adjusting "ouput_name" at the top. Index referes to unique numbers on the left side of the xlsx sheet, these aren't really needed.  
-
-
+#myorder=[17,18,11,12,9,10,14,15,16,0,7]
+#cols3 = [cols2[i] for i in myorder] # rearange header
+#tempframe=fullout[cols3]
+##tempframe.convert_objects(convert_numeric=True)
+##shortout=pd.to_numeric(tempframe[cols3])
+#
+#shortout=pd.DataFrame()
+#for i in cols3:
+#    shortout[i]=pd.to_numeric(tempframe[i])
+#
+#shortout['temp'] = shortout[cols3[0:2]].mean(axis=1)
+#shortout['sal'] = shortout[cols3[2:4]].mean(axis=1)
+#shortout['oxy'] = shortout[cols3[4:6]].mean(axis=1)
+#shortout['pdens'] = shortout[cols3[7:9]].mean(axis=1)
+#shortout=shortout.drop(cols3[0:6]+cols3[7:9],axis=1) # remove the columns that were averaged
+#
+#cols4 = shortout.columns.tolist() # get the column headers
+#myorder=[1,2,3,4,5,0,6]
+#cols4 = [cols4[i] for i in myorder] # rearange header
+#shortout=shortout[cols4] # format output into easily pastable structure
+#shortout.to_excel(output_name2,index=False) #outputs the concatenated data. Change the file name by adjusting "ouput_name" at the top. Index referes to unique numbers on the left side of the xlsx sheet, these aren't really needed.  
+#
+#
 
 
