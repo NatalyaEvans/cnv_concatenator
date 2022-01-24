@@ -1,0 +1,75 @@
+*	Sea-Bird SBE50 D	ata File:								
+*	FileName = C:\Us	ers\jmoffett\Documents\Kilo	2019\Oceanus 2021\Summer Cruise\Cast 2 Sta 24.afm							
+*	Software Version	SeatermAF 2.1.4.55								
+*	Temperature SN =									
+*	Conductivity SN	=								
+*	System UpLoad Ti	me = Aug 01 2021 07:45:52 (	localtime) = Aug 01 2021 14:45:52 (UTC)							
+*	ds									
+*	90208 AFM V 2.0d	SERIAL NO. 87  01 Aug 202	1 07:41:36							
+*	main battery = 1	2.59 volts								
+*	lithium battery	=  3.18 volts								
+*	AFM is NOT ARMED									
+*	A>									
+*E	ND*									
+										
+1	1   31 Jul 2021	16:07:33  confirmed   12.3	2849							
+	03E8000B24					3E8		1000		900
+	03E9000B25									
+	03E9000B26									
+	03E7000B27									
+	03E6000B28									
+2	2   31 Jul 2021	16:10:53  confirmed   12.3	3048							
+	0383000BEC					383		899		799
+	0382000BED									
+	0382000BEE									
+	0383000BEF									
+	0382000BF0									
+3	3   31 Jul 2021	16:14:00  confirmed   12.3	3234							
+	031F000CA7					31F		799		699
+	0320000CA8									
+	0320000CA9									
+	0320000CAA									
+	031E000CAB									
+4	4   31 Jul 2021	16:17:14  confirmed   12.2	3427							
+	02BB000D69					2BB		699		599
+	02BB000D6A									
+	02BC000D6B									
+	02BB000D6C									
+	02BA000D6D									
+5	5   31 Jul 2021	16:20:20  confirmed   12.2	3612							
+	2.57E+28					257		599		499
+	2.57E+29									
+	2.58E+30									
+	2.58E+31									
+	2.57E+32									
+6	7   31 Jul 2021	16:26:41  confirmed   12.2	3992							
+	0190000FA0					190		400		300
+	0190000FA1									
+	018F000FA2									
+	018E000FA3									
+	018D000FA4									
+7	8   31 Jul 2021	16:30:18  confirmed   12.2	4208							
+	011C001079					11C		284		184
+	011D00107A									
+	011C00107B									
+	011B00107C									
+	011B00107D									
+8	9   31 Jul 2021	16:33:00  confirmed   12.2	4369							
+	00C700111B					0C7		199		99
+	00C700111C									
+	00C600111D									
+	00C600111E									
+	00C600111F									
+9	10   31 Jul 202	1 16:34:13  confirmed   12.	1  4441							
+	009F001164					09F		159		59
+	009F001165									
+	009E001166									
+	009E001167									
+	009E001168									
+10	11   31 Jul 20	21 16:35:08  confirmed   12	.1  4495							
+	008200119B					82		130		30
+	008200119C									
+	008100119D									
+	008000119E									
+	007F00119F									
+A>										
